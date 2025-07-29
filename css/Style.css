@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: 100vh;
+}
+.contents {
+  display: flex;
+  justify-content: space-around;
+}
+.contents a {
+  margin: 15px 0px;
+  text-decoration: none;
+  color: #777;
+  transition: all 0.3s linear ;
+}
+.contents a:hover {
+  color: #f9690e;
+}
