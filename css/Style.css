@@ -1,20 +1,92 @@
+:root {
+  --main-color: #f9690e;
+  --secondary-color: #777;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", "sans-serif";
 }
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   height: 100vh;
 }
+
+/* Navbar  */
 .contents {
   display: flex;
   justify-content: space-around;
 }
 .contents a {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
   margin: 15px 0px;
   text-decoration: none;
-  color: #777;
-  transition: all 0.3s linear ;
+  transition: all 0.3s linear;
 }
 .contents a:hover {
-  color: #f9690e;
+  color: var(--main-color);
+}
+.contents a.active {
+  color: var(--main-color);
+  font-weight: bold;
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* Hero section  */
+.hero-sec {
+  background-image: url(../images/banner/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+}
+.hero-sec .hero-secBtn {
+  background: transparent;
+  border: none;
+  color: aliceblue;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: 1px solid white;
+  transition: all 0.5s linear;
+}
+.hero-sec .hero-secBtn:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+/* Class section  */
+
+.cls-sec h2{
+  color: var(--main-color);
+
+}
+.cls-sec .cls-circle{
+  width: 40px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 90%;
+}
+
+/* About section  */
+
+.myAbout {
+  background-image: url(../images/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+
+/* Galler Section  */
+
+.myGallery{
+   background-image: url(../images/img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
 }
