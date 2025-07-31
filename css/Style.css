@@ -13,14 +13,15 @@ html {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
 }
 
 /* Navbar  */
-.contents {
+/* .contents {
   display: flex;
   justify-content: space-around;
-}
+} */
 .contents a {
   color: var(--secondary-color);
   text-transform: uppercase;
@@ -36,7 +37,7 @@ section {
 .contents a.active {
   color: var(--main-color);
   font-weight: bold;
-  border-bottom: 2px solid var(--main-color);
+ 
 }
 
 /* Hero section  */
@@ -72,7 +73,32 @@ section {
   background-color: var(--main-color);
   border-radius: 90%;
 }
+.myClasses .cls-box{
+  border: 2px solid var(--main-color);
+  position: relative;
+  border-radius: 0 0 20px 0;
+  
+}
+.myClasses .cls-box .sm-boxx {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 10px;
+    left: -15px;
+    background: var(--main-color);
+    top: -15px;
+    border: 4px solid white;
+    text-align: center
+}
+.myClasses .cls-box .sm-boxx i{
+  font-size: 28px;
+  color: white;
+}
+.myClasses .cls-box .box-text{
+  margin-left: 40px;
+  margin-top: 10px;
 
+}
 /* About section  */
 
 .myAbout {
@@ -81,7 +107,33 @@ section {
   background-size: cover;
   background-position: center left;
 }
+.myAbout .abt-img img{
+  min-height: 100px;
+  max-height: 299px;
+}
 
+
+.myAbout .abt-text ul li i{
+  font-size: 12px;
+  color: var(--main-color);
+  margin-right: 10px;
+}
+
+.myTrainers .trnr-profile i{
+    border: 1px solid;
+    width: 25%;
+    font-size: 25px;
+    margin: 5px;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    transition: all 0.4s linear;
+  }
+  .myTrainers .trnr-profile i:hover{
+    color: var(--main-color);
+    border-radius: 5px;
+  border: 1px solid;
+  
+}
 /* Galler Section  */
 
 .myGallery{
