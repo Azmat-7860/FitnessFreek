@@ -142,3 +142,16 @@ section {
   background-size: cover;
   background-position: center left;
 }
+.myGallery .gryl-img{
+  border-bottom: 2px solid var(--main-color);
+}
+.myGallery .overlayScreen {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.myGallery .position-relative:hover .overlayScreen {
+  opacity: 1;
+  visibility: visible;
+}
