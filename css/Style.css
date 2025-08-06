@@ -44,7 +44,7 @@ section {
 .hero-sec {
   background-image: url(../images/banner/banner.jpg);
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center ;
   background-size: cover;
 }
 .hero-sec .hero-secBtn {
@@ -154,4 +154,23 @@ section {
 .myGallery .position-relative:hover .overlayScreen {
   opacity: 1;
   visibility: visible;
+}
+
+.contact-box{
+  background-color: var(--main-color);
+  height: 100%;
+}
+.contact-box button{
+  border: none;
+  padding: 10px 30px;
+  border-radius: 3px;
+   color: #777;
+   font-weight: 600;
+   font-size: larger;
+}
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    background: #222222;
 }

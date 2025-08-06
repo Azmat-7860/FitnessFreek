@@ -19,8 +19,12 @@
 }
 
 /* Large (lg) - ≥992px */
-@media (max-width: 992px) { 
+@media (min-width: 992px) { 
+.hero-sec {
 
+  background-position: center left;
+ 
+}
 }
 
 /* Extra large (xl) - ≥1200px */
